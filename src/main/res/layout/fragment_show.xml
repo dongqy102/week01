@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ShowFragment">
+
+    <LinearLayout
+        android:background="@color/colorAccent"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100sp">
+        <ImageView
+             android:src="@drawable/cat"
+            android:layout_width="100sp"
+            android:layout_height="100sp" />
+
+        <TextView
+            android:textSize="50sp"
+            android:text="京东"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <com.stx.xhb.xbanner.XBanner
+        android:id="@+id/xbanner"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"></com.stx.xhb.xbanner.XBanner>
+
+    <GridView
+        android:id="@+id/gv"
+        android:numColumns="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></GridView>
+
+</LinearLayout>
